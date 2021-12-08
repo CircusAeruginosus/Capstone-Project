@@ -26,14 +26,16 @@ app.get("/js", (req, res) => {
 app.use(express.json());
 app.use(cors())
 
+
 //controller
 const titleController = require("./controller/titleController");
 const res = require("express/lib/response");
 
+
 //endpoints
 
 
-//port
+//defining port for heroku, or if not connected to heroku, on port 4040
 const port = process.env.Port || 4040
 
 app.listen(port, () => {
