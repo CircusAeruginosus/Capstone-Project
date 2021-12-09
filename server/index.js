@@ -29,10 +29,11 @@ app.use(cors())
 
 //controller
 const titleController = require("./controller/titleController");
-const res = require("express/lib/response");
+const omdbController = require("./controller/omdbController")
 
 
 //endpoints
+app.get("/api/movie/search", omdbController.searchMovie)
 
 
 //defining port for heroku, or if not connected to heroku, on port 4040
