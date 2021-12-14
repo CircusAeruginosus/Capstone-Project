@@ -4,15 +4,16 @@ const { OMDB_KEY } = process.env
 
 
 module.exports = {
-    searchMovie: async (req, res) => {
-        const { movieInput } = req.query
-        let movieData 
-        await axios.get(`http://www.omdbapi.com/?apikey=${OMDB_KEY}&t=${movieInput}`)
+    searchTitle: async (req, res) => {
+        const { titleInput } = req.query
+        let titleData 
+        console.log(req.query)
+        await axios.get(`http://www.omdbapi.com/?apikey=${OMDB_KEY}&t=${titleInput}`)
         .then(res => {
-            movieData = res.data 
+            titleData = res.data 
         })
         .catch(error => console.log(error))
-        res.status(200).send(movieData)
-    }
+        res.status(200).send(titleData)
+    },
 
 }

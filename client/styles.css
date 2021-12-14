@@ -1,3 +1,5 @@
+
+
 body {
     background-color: #577590 ;
 }
@@ -7,7 +9,15 @@ h1 {
     padding: 10px;
     color: #F3722C;
     font-family: "Comfortaa";
+   
 }
+
+h1:hover {
+    transform: scale(1.5, 1.5);
+
+}
+
+
 
 #search {
     background-color: #F94144 ;
@@ -55,15 +65,40 @@ section {
     margin: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 450px;
+    /* align-items: center; */
+    height: 650px;
     width: 400px;
 }
+
+
+
 
 h2 {
     color: #F9C74F;
     text-align: center;
     font-family: "Comfortaa";
+}
+
+#want-to-watch {
+    color: #F3722C;
+    font-family: "Comfortaa";
+}
+
+
+#want-to-watch:hover {
+    cursor: pointer;
+}
+
+
+
+#watched {
+    color: #F3722C;
+    font-family: "Comfortaa";
+}
+
+
+#watched:hover {
+    cursor: pointer;
 }
 
 
@@ -96,6 +131,10 @@ h5 {
 }
 
 img {
-    height: 50px;
+    height: 100px;
+}
+
+i {
+    font-size: larger;
 }
 

@@ -5,13 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>WatchThis</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
         <link rel="stylesheet" href="./styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
     </head>
 
@@ -19,7 +19,7 @@
     <h1>WatchThis</h1>
     <div id="search">
         <form id="search-bar">
-            <input type="text" placeholder="search for a movie or show" name="search">
+            <input type="text" placeholder="search for a movie or show" id="search-input">
             <button id="search-btn" type="submit">Search</button>
         </form>
     </div>
@@ -29,23 +29,43 @@
 <body>
     <main>
         <section>
-        
+        <header id="wtw">
             <h2>Want to Watch</h2>
+        </header>
+
+            
+
+
         
-            <button class="add-btn">Add Something</button>
+            <div id="want-to-watch">
+
+            
+        </div>
+
+        
     
         </section>
         <section>
             <h2>Watched</h2>
-            <button class="add-btn">Add Something</button>
+
+            
+            
+
+            <div id ="watched">
+
+            
+                
+            </div>
+
+            
         </section>
     </main>
     <footer>
-        <h5>Designed and built by Caitlin Thompson, 2021</h5>
-        <h5>Powered by: <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg"/></h5>
+        <h5>Designed and built in 2021</h5>
     </footer>
 
-<script src="./main.js"
+<script src="../node_modules/axios/dist/axios.min.js"></script>
+<script src="./main.js"></script>
 </body>
 </html>
     

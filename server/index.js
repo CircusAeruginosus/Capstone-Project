@@ -4,6 +4,8 @@ const path = require("path")
 
 const app = express();
 
+
+
 //using express to serve up static files in client folder (html, css, etc.)
 app.use(express.static("client"))
 
@@ -28,12 +30,14 @@ app.use(cors())
 
 
 //controller
+const omdbController = require("./controller/omdbController");
 const titleController = require("./controller/titleController");
-const omdbController = require("./controller/omdbController")
+const { Sequelize } = require("sequelize/dist");
 
 
 //endpoints
-app.get("/api/movie/search", omdbController.searchMovie)
+app.get("/api/title/search/", omdbController.searchTitle)
+app.post("/api/save/title/", titleController.saveToDb)
 
 
 //defining port for heroku, or if not connected to heroku, on port 4040
