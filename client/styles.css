@@ -1,5 +1,3 @@
-
-
 body {
     background-color: #577590 ;
 }
@@ -16,8 +14,6 @@ h1:hover {
     transform: scale(1.5, 1.5);
 
 }
-
-
 
 #search {
     background-color: #F94144 ;
@@ -49,8 +45,6 @@ input {
     background-color: lightgray;
 }
 
-
-
 main {
     display: flex;
     justify-content: space-evenly;
@@ -66,12 +60,9 @@ section {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    height: 650px;
+    min-height: 650px;
     width: 400px;
 }
-
-
-
 
 h2 {
     color: #F9C74F;
@@ -82,26 +73,22 @@ h2 {
 #want-to-watch {
     color: #F3722C;
     font-family: "Comfortaa";
+    flex: 1;
 }
-
 
 #want-to-watch:hover {
     cursor: pointer;
 }
 
-
-
 #watched {
     color: #F3722C;
     font-family: "Comfortaa";
+    flex: 1;
 }
-
 
 #watched:hover {
     cursor: pointer;
 }
-
-
 
 .add-btn {
     border-radius: 5px;
@@ -116,7 +103,6 @@ h2 {
     background-color: white;
     color: #90BE6D;
 }
-
 
 footer {
     display: flex;

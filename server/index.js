@@ -37,7 +37,8 @@ const { Sequelize } = require("sequelize/dist");
 
 //endpoints
 app.get("/api/title/search/", omdbController.searchTitle)
-app.post("/api/save/title/", titleController.saveToDb)
+app.put("/api/title/:movieId", omdbController.moveToWatched)
+// app.post("/api/save/title/", titleController.saveToDb)
 
 
 //defining port for heroku, or if not connected to heroku, on port 4040
