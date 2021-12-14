@@ -33,13 +33,11 @@ const showOnScreen = (dbObj) => {
 
   dbObj.wantToWatch.forEach((movie) => {
     const movieEl = createEl(movie, true);
-    // wantToWatchEls.push(movieEl);
     document.querySelector("#want-to-watch").appendChild(movieEl)
   });
 
   dbObj.watched.forEach((movie) => {
     const movieEl = createEl(movie, false);
-    // watchedEls.push(movieEl);
     document.querySelector("#watched").appendChild(movieEl)
   });
 };
