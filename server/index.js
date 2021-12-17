@@ -32,7 +32,7 @@ app.get("/api/title/search/", omdbController.searchTitle)
 app.put("/api/title/:movieId", omdbController.moveToWatched)
 
 //defining port for heroku, or if not connected to heroku, on port 4040
-const port = process.env.Port || 4040
+const port = process.env.PORT || 4040
 
 app.listen(port, () => {
     console.log(`Listening on port ${port}`)
